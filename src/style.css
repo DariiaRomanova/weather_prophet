@@ -3,10 +3,113 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  background-color: white;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(163, 175, 243) 0%,
+    rgb(220, 182, 232) 100.2%
+  );
   max-width: 600px;
   margin: 45px auto;
   padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
+}
+a {
+  color: #7877be;
+}
+header {
+  border-bottom: 1px solid rgba(237, 240, 246, 0.4);
+  padding: 0 0 30px 0;
+}
+.search-form {
+  padding: 0;
+  margin: 0;
+}
+
+.search-form-input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #7877be;
+}
+
+.search-form-button {
+  background-color: #7877be;
+  width: 18%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.current-weather-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(237, 240, 246, 0.4);
+  padding: 15px 20px;
+}
+.city-name {
+  margin: 0;
+  font-size: 36px;
+  line-height: 42px;
+}
+.country-name {
+  margin: 0;
+  font-size: 25px;
+  line-height: 40px;
+}
+.date-time {
+  font-size: 16px;
+  margin: 0;
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.5);
+}
+.current-temperature-container {
+  display: flex;
+  margin: 0;
+}
+.current-weather-icon {
+  font-size: 44px;
+  margin: 5px 0;
+}
+.current-weather-description {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.5);
+}
+.current-temp-value {
+  font-size: 88px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.current-temp-unit {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.feels-like {
+  text-align: center;
+  margin: 0;
+  color: rgba(39, 33, 66, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+}
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(237, 240, 246, 0.4);
+  padding: 30px 0 0 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
 }
