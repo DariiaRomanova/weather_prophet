@@ -3,38 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
     <title>Weather Prophet</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Dnipro</h1>
-        <h2>Ukraine</h2>
-        <p>November, 4. Saturday, 19:40</p>
-      </div>
-      <div>
-        <p>12°C <br />Clear <br />20° / 9° Feels like 11° <br />🌙</p>
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city.." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="row">
+          <div class="col-sm">
+            <h1>Dnipro</h1>
+            <h2>Ukraine</h2>
+            <p>November, 4. Saturday, 19:40</p>
+          </div>
+          <div class="col-sm">
+            <p>12°C <br />Clear <br />20° / 9° Feels like 11° <br />🌙</p>
+          </div>
+        </div>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/DariiaRomanova" target="_blank"
-        >Daria Romanova</a
-      >, is open-sourced on
-      <a
-        href="https://github.com/DariiaRomanova/weather_prophet"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://weather-prophet.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/DariiaRomanova" target="_blank"
+          >Daria Romanova</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/DariiaRomanova/weather_prophet"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://weather-prophet.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
