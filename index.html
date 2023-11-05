@@ -15,10 +15,11 @@
   <body>
     <div class="container">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
+            id="search-form-input"
             required
             class="search-form-input"
           />
@@ -28,7 +29,7 @@
       <main>
         <div class="current-weather-container">
           <div>
-            <h1 class="city-name">Dnipro</h1>
+            <h1 class="city-name" id="city-name">Dnipro</h1>
             <h2 class="country-name">Ukraine</h2>
             <p class="date-time">November, 4. Saturday, 19:40</p>
           </div>
@@ -62,5 +63,6 @@
         >
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
