@@ -44,32 +44,40 @@ function updateTimeDate(timeStamp) {
 }
 
 function updateWeatherData(response) {
-  updateTimeDate(response.data.time);
-  let currentTempElement = document.querySelector("#current-temp-value");
   let cityName = document.querySelector("#city-name");
-  let countryName = document.querySelector("#country-name");
-  let feelsLikeElement = document.querySelector("#feels-like");
-  let descriptionElement = document.querySelector(
-    "#current-weather-description"
-  );
-  let humidityValueElement = document.querySelector("#humidity-value");
-  let windValueElement = document.querySelector("#wind-value");
-  let pressureValueElement = document.querySelector("#pressure-value");
-
   cityName.innerHTML = response.data.city;
+
+  let countryName = document.querySelector("#country-name");
   countryName.innerHTML = response.data.country;
 
+  updateTimeDate(response.data.time);
+
+  let iconContainer = document.querySelector("#current-weather-icon");
+  let icon = `<img src="${response.data.condition.icon_url}">`;
+  iconContainer.innerHTML = icon;
+
+  let currentTempElement = document.querySelector("#current-temp-value");
   let currentTempValue = Math.round(response.data.temperature.current);
   currentTempElement.innerHTML = currentTempValue;
 
+  let feelsLikeElement = document.querySelector("#feels-like");
   let feelsLikeTemp = Math.round(response.data.temperature.feels_like);
   feelsLikeElement.innerHTML = `Feels like ${feelsLikeTemp}°`;
 
+  let descriptionElement = document.querySelector(
+    "#current-weather-description"
+  );
   let description = response.data.condition.description;
   descriptionElement.innerHTML =
     description.charAt(0).toUpperCase() + description.slice(1);
+
+  let humidityValueElement = document.querySelector("#humidity-value");
   humidityValueElement.innerHTML = response.data.temperature.humidity;
+
+  let windValueElement = document.querySelector("#wind-value");
   windValueElement.innerHTML = `${response.data.wind.speed} m/s`;
+
+  let pressureValueElement = document.querySelector("#pressure-value");
   pressureValueElement.innerHTML = response.data.temperature.pressure;
 }
 

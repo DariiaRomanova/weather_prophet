@@ -85,14 +85,13 @@ main {
   justify-content: space-between;
   margin: 0;
 }
-.current-weather-icon {
-  font-size: 50px;
-  margin-bottom: 10px;
+
+.current-weather-icon img {
+  width: 100px;
+  margin-right: -20px;
 }
-.current-weather-description {
-  font-size: 14px;
+.description-container {
   text-align: center;
-  color: rgba(39, 33, 66, 0.5);
 }
 .current-temp-value {
   font-size: 88px;
@@ -103,7 +102,7 @@ main {
   font-size: 28px;
   margin-top: 20px;
 }
-.feels-like {
+.current-weather-description {
   text-align: center;
   margin: 0;
   color: rgba(39, 33, 66, 0.5);
