@@ -8,6 +8,7 @@ body {
     rgb(163, 175, 243) 0%,
     rgb(220, 182, 232) 100.2%
   );
+
   max-width: 600px;
   margin: 45px auto;
   padding: 30px;
@@ -58,7 +59,9 @@ main {
   align-items: center;
   border-radius: 6px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
   background-color: rgba(237, 240, 246, 0.4);
+
   padding: 15px 20px;
 }
 .city-name {
@@ -79,11 +82,12 @@ main {
 }
 .current-temperature-container {
   display: flex;
+  justify-content: space-between;
   margin: 0;
 }
 .current-weather-icon {
-  font-size: 44px;
-  margin: 5px 0;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 .current-weather-description {
   font-size: 14px;
@@ -105,6 +109,31 @@ main {
   color: rgba(39, 33, 66, 0.5);
   font-size: 14px;
   line-height: 20px;
+}
+.additional-param-conteiner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.add-param-card {
+  text-align: center;
+  background-color: rgba(237, 240, 246, 0.4);
+  width: 180px;
+  border-radius: 8px;
+  padding: 10px 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.add-param-card img {
+  width: 30px;
+  opacity: 0.8;
+}
+.add-param-card h6 {
+  margin: 0;
+  font-size: 14px;
+}
+.add-param-card p {
+  font-size: 14px;
+  margin: 10px 0 0 0;
 }
 footer {
   text-align: center;

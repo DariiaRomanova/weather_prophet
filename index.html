@@ -31,19 +31,41 @@
         <div class="current-weather-container">
           <div>
             <h1 class="city-name" id="city-name">Dnipro</h1>
-            <h2 class="country-name">Ukraine</h2>
-            <p class="date-time">November, 4. Saturday, 19:40</p>
+            <h2 class="country-name" id="country-name">Ukraine</h2>
+            <p class="date-time" id="date-time"></p>
+          </div>
+          <div>
+            <div class="current-weather-icon">🌙</div>
+            <div
+              class="current-weather-description"
+              id="current-weather-description"
+            >
+              Clear
+            </div>
           </div>
           <div>
             <div class="current-temperature-container">
-              <div>
-                <div class="current-weather-icon">🌙</div>
-                <div class="current-weather-description">Clear</div>
-              </div>
-              <div class="current-temp-value" id="current-temp-value">12</div>
+              <div class="current-temp-value" id="current-temp-value"></div>
               <div class="current-temp-unit">°C</div>
             </div>
-            <div class="feels-like">20° / 9° Feels like 11°</div>
+            <div class="feels-like" id="feels-like">Feels like</div>
+          </div>
+        </div>
+        <div class="additional-param-conteiner">
+          <div class="add-param-card">
+            <img src="images/humidity.png" />
+            <h6>Humidity</h6>
+            <p id="humidity-value"></p>
+          </div>
+          <div class="add-param-card">
+            <img src="images/wind.png" />
+            <h6>Wind</h6>
+            <p id="wind-value"></p>
+          </div>
+          <div class="add-param-card">
+            <img src="images/pngwing.com.png" />
+            <h6>Pressure</h6>
+            <p id="pressure-value"></p>
           </div>
         </div>
       </main>
