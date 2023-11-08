@@ -93,7 +93,29 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let weatherForecastElement = document.querySelector(
+    "#weather-forecast-container"
+  );
+
+  let weekDays = ["Fri", "Sat", "Sun", "Mon", "Tue"];
+  let forecastHtml = "";
+  weekDays.forEach(function (day) {
+    forecastHtml += `<div class="forecast-day">
+            <p class="weekday-name">${day}</p>
+            <img
+              class="forecast-day-icon"
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+            />
+            <span class="forecast-day-temp-max">13°</span>
+            <span class="forecast-day-temp-min">8°</span>
+          </div>`;
+  });
+  weatherForecastElement.innerHTML = forecastHtml;
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Dnipro");
+displayForecast();
