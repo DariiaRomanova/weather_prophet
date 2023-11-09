@@ -98,9 +98,10 @@ main {
   margin-left: 10px;
 }
 .current-temp-unit {
-  font-size: 28px;
   margin-top: 20px;
+  font-size: 28px;
 }
+
 .current-weather-description {
   text-align: center;
   margin: 0;
@@ -151,6 +152,8 @@ main {
 }
 .forecast-day-icon {
   width: 70px;
+  display: block;
+  margin: 0 auto;
 }
 
 .forecast-day-temp-max {
